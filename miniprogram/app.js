@@ -58,15 +58,6 @@ App({
     heweatherKey:"3228f06d131a451b86eab302fbb9bb1a",
     userInfo:{},
     counterID:"",
-    tcbData:{
-
-      title:"云开发训练营",
-  
-      year:2019,
-  
-      company:"腾讯Tencent"
-  
-    }
   }
 
 })
