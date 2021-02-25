@@ -1,0 +1,19 @@
+<!--pages/story/story.wxml-->
+<view class="page__bd">
+    <view class="weui-article">
+        <view class="weui-article__h1">{{title}}</view>
+        <view class="weui-article__section">
+            <view class="weui-article__section">
+                <view class="weui-article__p">
+                    <image class="weui-article__img" src="{{image}}" mode="widthFix" />
+                 </view>
+                 <view class="weui-article__p">
+                    <rich-text nodes="{{body}}"></rich-text>
+                </view>
+                <view class="weui-article__p">
+                        知乎链接：{{share_url}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/zhihu_daily/zhihu_daily.wxml-->
+<button bindtap="addDaily">新增日报数据</button>

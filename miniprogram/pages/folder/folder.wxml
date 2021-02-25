@@ -1,0 +1,10 @@
+<!--pages/folder/folder.wxml-->
+<form bindsubmit="formSubmit">
+   <input name="name" placeholder='请输入文件夹名' auto-focus value='{{inputValue}}' bindinput='keyInput'></input>
+    <button type="primary" formType="submit">新建文件夹</button>
+</form>
+<form bindsubmit="uploadFiles">
+   <button type="primary" bindtap="chooseMessageFile">选择文件</button>
+   <button type="primary" formType="submit">上传文件</button>
+</form>
+<button type="primary" bindtap="addFiles">信息上传数据库</button>

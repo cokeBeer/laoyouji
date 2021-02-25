@@ -1,0 +1,5 @@
+<!--pages/user/user.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfomation"> 点击获取用户信息 </button>
+<view>{{userInfo.nickName}}</view>
+<view>{{userInfo.country}}</view>
+<image mode="widthFix" style="width:64px;height:64px" src="{{userInfo.avatarUrl}}"></image>

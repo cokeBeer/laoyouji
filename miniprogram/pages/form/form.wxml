@@ -1,0 +1,4 @@
+<!--pages/form/form.wxml-->
+<picker mode="date" value="{{pickerdate}}" start="2017-09-01" end="2022-09-01" bindchange="bindDateChange">
+选择的日期为：{{pickerdate}}
+</picker>

@@ -1,0 +1,4 @@
+<!--pages/file/file.wxml-->
+<view wx:for="{{logs}}" wx:for-item="log">
+    <view>{{index + 1}}. {{log}}</view>
+</view>
