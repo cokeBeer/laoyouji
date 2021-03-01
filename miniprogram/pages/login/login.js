@@ -7,17 +7,13 @@ userLogin:function(name,photo){
   var That = this;
   wx.login({
     success: res => {
-      wx.request({
-        url: 'https://api.weixin.qq.com/sns/jscode2session', 
-        data:{code:res.code,name:name,photo:photo},
-        success: res => {
-          console.log('res',res)
           app.globalData.userInfo=wx.getStorageSync('userInfo')
           console.log('app.userInfo',app.globalData.userInfo)   
           //调用云函数获取openid
           wx.cloud.callFunction({
             name:"login",
             success(res){
+              console.log('res',res)
               wx.setStorageSync('openid', res.result.openid)
             }
           }),
@@ -38,9 +34,7 @@ userLogin:function(name,photo){
             That.addUser()
           }
             }
-          })
-        }
-      })
+          })     
     }
   })
 },
