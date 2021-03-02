@@ -10,12 +10,15 @@
     "pages/form/form",
     "pages/user/user",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/friends/friends",
+    "pages/plan/plan"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "老友记",
     "navigationBarTextStyle":"black"
   },
 
@@ -25,5 +28,38 @@
     }
     },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar":{
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/首页.png",
+        "iconPath": "images/首页.png",
+        "pagePath": "pages/login/login",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/地标.png",
+        "iconPath": "images/地标.png",
+        "pagePath": "pages/plan/plan",
+        "text": "路线"
+      },
+      {
+        "selectedIconPath": "images/通讯录.png",
+        "iconPath": "images/通讯录.png",
+        "pagePath": "pages/friends/friends",
+        "text": "友友们"
+      },
+      {
+        "selectedIconPath": "images/用户.png",
+        "iconPath": "images/用户.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
 }
+
