@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/rec_detail/rec_detail",
+    "pages/rec_province/rec_province",
+    "pages/recommend/recommend",
+    "pages/match/match",
+    "pages/folder/folder",
+    "pages/zhihu_daily/zhihu_daily",
+    "pages/apidata/apidata",
+    "pages/request/request",
+    "pages/story/story",
+    "pages/file/file",
+    "pages/form/form",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/room/room",
+    "pages/userList/userList",
+    "pages/messageList/messageList",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于推荐附近景点"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

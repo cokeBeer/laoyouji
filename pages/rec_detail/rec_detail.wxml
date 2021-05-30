@@ -1,0 +1,43 @@
+<!--pages/rec_detail/rec_detail.wxml-->
+<view class="page__bd">
+  <view class="weui-article">
+      <!-- 标题 -->
+      <view class="weui-article__h1">{{spot.name}}</view> 
+      <view class="weui-article__section">
+        <!-- 背景图片 -->
+        <view class="weui-article__p">
+            <image class="weui-article__img" src="{{spot.image}}"  mode="aspectFit" style="height: 180px"  />
+        </view>
+
+        <view class="weui-article__section">
+            <!-- 简介 -->
+            <view class="weui-article__h3">简介</view>
+            <view class="weui-article__p">
+                    {{spot.intro}}
+            </view>
+            <!-- 路线推荐 -->
+            <view class="weui-article__h3">路线推荐</view>
+            <view wx:for="{{spot.route}}" wx:for-item="route">
+              <view class="weui-article__p">
+                      {{route}}
+              </view>
+            </view>
+            <!-- 小贴士 -->
+            <view class="weui-article__h3">小贴士</view>
+            <view class="weui-article__p">
+                    {{spot.tips}}
+            </view>
+            <!-- 聊天室 -->
+            <view class="weui-article__h3">点击进入当地聊天室</view>
+            <view class="weui-article__p">
+                    <text bindtap="goChat">{{spot.chatroom}}</text>
+            </view>
+            <!-- 评论 -->
+            <view class="weui-article__h3">评论</view>
+            <view class="weui-article__p">
+                    {{spot.comments}}
+            </view>
+        </view>
+      </view>
+  </view>
+</view>

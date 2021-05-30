@@ -1,0 +1,32 @@
+<!--pages/match/match.wxml-->
+<form bindsubmit="MatchSpot">
+   <input type="text" placeholder="请输入您想要去的景点：" name="spot"></input>
+   <input type="text" placeholder="请输入该景点所在的省份：" name="province"></input>
+    <button type="primary" formType="submit">点击确认</button>
+</form>
+<!-- 当有搜索时，isHide变为false，显示下面的页面 -->
+<view wx:if="{{isHide}}">
+    <view class="page-section">
+        <view class="weui-cells__title">该景点对应聊天室：</view>
+        <text bindtap="goChat" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{groupId}}</text>
+    </view>
+    <!-- 如果景点是第一次被搜索，则呈现如下内容 -->
+    <view wx:if="{{isNew}}">
+        <view class="page-section">
+            <view class="weui-cells__title">您是社区该景点的第一个关注人，敬请期待更多同伴的加入吧~</view>
+        </view>
+    </view>
+    <!-- 如果景点已在数据库创建，则呈现如下内容 -->
+    <view wx:else>
+        <view class="page-section">
+            <view class="weui-cells__title">共同关注该景点的友友：</view>
+        </view>
+
+        <view wx:for="{{friends}}" wx:for-item="friend">
+            <image class="user-avatar" mode="widthFix" src="{{friend.avatarUrl}}">
+            </image>
+            <view>{{friend.name}}</view>
+            <view wx:if="{{friend.home==province}}">本省</view>
+        </view>
+    </view>
+</view>

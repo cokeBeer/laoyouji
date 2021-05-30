@@ -1,0 +1,4 @@
+/* pages/recommend/recommend.wxss */
+.weui-grid{
+  width: 20%;
+}

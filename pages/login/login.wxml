@@ -1,0 +1,62 @@
+<!--pages/login/login.wxml-->
+<view wx:if="{{isHide}}">
+    <view wx:if="{{first}}">
+            <view class='header'>
+                <image src='/images/wx_login.jpg' mode='widthFix'></image>
+            </view>
+
+            <view class='content'>
+                <view>申请获取您的以下权限</view>
+                <text>获得您的公开信息(昵称，头像等)</text>
+            </view>
+            <button class='bottom' type='primary' bindtap="getUserProfile"> 授权登录</button>
+    </view>
+    <view wx:else>
+        <form bindsubmit="UserInput">
+            <view class="page-body">
+                <view class="page-section">
+                    <view class="weui-cells__title">请输入您的常住地</view>
+                    <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell weui-cell_input">
+                        <input class="weui-input" auto-focus type="text" name="home" placeholder="常住地:"></input>
+                    </view>
+                    </view>
+                </view>
+                <view class="page-section">
+                    <view class="weui-cells__title">请推荐三个您家乡的景点~</view>
+                    <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell weui-cell_input">
+                        <input class="weui-input" auto-focus type="text"  placeholder="请填写景点1：" name="spot1"/>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <input class="weui-input" auto-focus type="text"  placeholder="请填写景点2：" name="spot2"/>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <input class="weui-input" auto-focus type="text"  placeholder="请填写景点3：" name="spot3"/>
+                    </view>
+                    </view>
+                </view>
+            </view>            
+            <button type="primary" formType="submit">点击提交，开始您的奇遇之旅吧~</button>
+        </form>
+    </view>
+</view>
+<view wx:else>
+    <view class="MoWel">
+        <image id="tupian" src="https://ahuang-1304974853.cos.ap-chongqing.myqcloud.com/3b25f2588df2e93b1120a8498b3e15dd.png"></image>
+            <view id="wenzi">欢迎使用“老游记”</view>
+        
+    </view>
+    <view class="MoWel_1">
+        <image class='background' src="https://ahuang-1304974853.cos.ap-chongqing.myqcloud.com/src%3Dhttp___5b0988e595225.cdn.sohucs.com_q_70%2Cc_zoom%2Cw_640_images_20180402_552608f4694d4060ae284d59ce710f33.jpeg%26refer%3Dhttp___5b0988e595225.cdn.sohucs.jpg" style="opacity:{{0.8}}"></image>
+        <view id="kongge">
+            此处无东西
+        </view>
+        <view id="lianjie">    
+        <navigator url="./../match/match" >景  点  搜  索</navigator>
+        </view>
+        <view id="lianjie">    
+        <navigator url="./../recommend/recommend" >攻  略  推  荐</navigator>    
+        </view>
+    </view>
+</view>

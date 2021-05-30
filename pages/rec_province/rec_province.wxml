@@ -1,0 +1,8 @@
+<!--pages/rec_province/rec_province.wxml-->
+<view wx:for="{{spots}}" wx:for-item="spot">
+  <view id="spot">    
+    <navigator url="./../rec_detail/rec_detail?name={{spot.name}}" >{{spot.name}}</navigator>    
+  </view>
+  <image class="spot-avatar" mode="widthFix" src="{{spot.image}}">
+  </image>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:for-item="grid" wx:key="*this">
+                <navigator url="./../rec_province/rec_province?name={{grid.title}}" class="weui-grid" hover-class="weui-grid_active">
+                    <!-- <image class="weui-grid__icon" src="{{grid.imgurl}}" /> -->
+                    <view class="weui-grid__label">{{grid.title}}</view>
+                </navigator>
+            </block>
+        </view>
+</view>

@@ -1,0 +1,106 @@
+/* pages/login/login.wxss */
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+
+#wenzi {
+  padding-top:10px;
+
+  padding-right:15px;
+
+  padding-bottom:10px;
+
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+
+  line-height: 1.6;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  color: rgba(255, 93, 17, 0.829);
+
+  text-align: center;
+
+}
+
+.MoWel {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(199, 236, 168, 0.664);
+}
+
+#tupian{
+  margin-left: 15px;
+  margin-top:  7px;
+  width: 50px;
+  height:35px;
+}
+
+#wenzi {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+ }
+
+#lianjie {
+
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+  padding:5px 5px;
+
+  background-color: #f79067dc;
+
+  color: #fff;
+
+  border-radius: 4px;
+  text-align: center;
+}
+
+.MoWel_1{
+  margin-bottom: 60px;
+}
+
+.background {
+  bottom: auto;  
+  width:100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  /* align-items: baseline; */
+
+}
+
+#kongge{
+  height:50px;
+  color: rgba(204, 204, 204, 0);
+}
